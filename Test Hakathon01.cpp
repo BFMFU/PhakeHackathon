@@ -124,6 +124,10 @@ int main(){
 			}
 			break;
 		}
+		default :{
+			printf("Lua chon khong hop le. Moi ban nhap lai.");
+			break;
+		}
 	}
 	}	
 	printf("Thoat chuong trinh. ");

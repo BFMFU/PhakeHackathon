@@ -81,6 +81,11 @@ int main() {
             	}
 				}
             case 6:{//sap xep duong cheo chinh theo gia tri tang dan
+            	if(cols!=rows){
+            		printf("Mang khong co duong cheo");
+            		break;
+				} else{
+				
                 for (i = 0; i < rows - 1 && i < cols - 1; i++) {
                     for (j = i + 1; j < rows && j < cols; j++) {
                         if (arr[i][i] > arr[j][j]) {
@@ -96,6 +101,7 @@ int main() {
                 }
                 printf("\n");
                 break;
+            	}
             	}
             case 7:{//tim kiem mot phan tu va in ra vi tri cua phan tu do trong mang
                 printf("Nhap phan tu can tim: ");
